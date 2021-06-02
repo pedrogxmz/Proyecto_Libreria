@@ -8,7 +8,7 @@ git diff = para ver diferencias entre archivo que existe y modificamos
 
 git add . = añade todos los archivos y cambios nuevos 
 
-git commit -m = -m para poner mensaje y el commit es para subir
+git commit -m "Escribe tu mensaje entre comillas" = -m para poner mensaje y el commit es para subir
 
 git push = para subir el archivo en el repo
 
