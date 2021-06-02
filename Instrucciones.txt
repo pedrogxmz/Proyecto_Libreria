@@ -1,0 +1,15 @@
+Git bash
+
+git status =  para ver los cambios en el rep
+
+git add "Nombre del archivo" = agregar archivo creado
+
+git diff = para ver diferencias entre archivo que existe y modificamos
+
+git add . = añade todos los archivos y cambios nuevos 
+
+git commit -m = -m para poner mensaje y el commit es para subir
+
+git push = para subir el archivo en el repo
+
+pide usuario y contraseña de su github
