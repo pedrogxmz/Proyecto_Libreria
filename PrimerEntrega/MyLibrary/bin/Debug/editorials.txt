@@ -1,0 +1,6 @@
+0|Pearson
+1|McGrawHill
+2|Alfaomega
+3|Dextra
+4|Paraninfo
+5|Patria
