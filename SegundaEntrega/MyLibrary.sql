@@ -18,6 +18,17 @@ create table books
     year         INTEGER not null
 );
 
+create table borrows
+(
+    user_id INTEGER not null
+        references users,
+    book_id INTEGER not null
+        references books
+);
+
+create unique index borrows_user_id_book_id_uindex
+    on borrows (user_id, book_id);
+
 --CODIGO PARA AGREGAR VALORES A LAS TABLAS--
 
 INSERT INTO users (id, first_name, last_name) VALUES (656219, 'Erika', 'Valdes');
@@ -46,3 +57,13 @@ INSERT INTO books (id, copies, title, author, editorial_id, edition, year) VALUE
 INSERT INTO books (id, copies, title, author, editorial_id, edition, year) VALUES (7076032, 2, 'Mecatronica: sistemas de control electronico', 'W. Bolton', 2, 2013, 5);
 INSERT INTO books (id, copies, title, author, editorial_id, edition, year) VALUES (7325639, 1, 'Problemas resueltos de control digital', 'Jose Gomez Campomanes', 4, 2012, 1);
 INSERT INTO books (id, copies, title, author, editorial_id, edition, year) VALUES (8334419, 2, 'Analisis de mecanismos planos', 'Enrique Sanmiguel Rojas', 4, 2014, 1);
+
+INSERT INTO borrows (user_id, book_id) VALUES (921055, 2727464);
+INSERT INTO borrows (user_id, book_id) VALUES (843281, 3226605);
+INSERT INTO borrows (user_id, book_id) VALUES (802580, 3233255);
+INSERT INTO borrows (user_id, book_id) VALUES (904872, 3243957);
+INSERT INTO borrows (user_id, book_id) VALUES (802580, 4383904);
+INSERT INTO borrows (user_id, book_id) VALUES (843281, 6223628);
+INSERT INTO borrows (user_id, book_id) VALUES (656219, 6277124);
+INSERT INTO borrows (user_id, book_id) VALUES (843281, 7325639);
+INSERT INTO borrows (user_id, book_id) VALUES (656219, 8334419);

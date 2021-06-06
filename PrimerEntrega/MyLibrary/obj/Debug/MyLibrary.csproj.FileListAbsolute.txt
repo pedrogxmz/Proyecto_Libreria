@@ -60,3 +60,10 @@ D:\4 Semestre\Programación orientada a objetos\Entregable 1\MyLibrary\bin\Debug
 D:\4 Semestre\Programación orientada a objetos\Entregable 1\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
 D:\4 Semestre\Programación orientada a objetos\Entregable 1\MyLibrary\obj\Debug\MyLibrary.exe
 D:\4 Semestre\Programación orientada a objetos\Entregable 1\MyLibrary\obj\Debug\MyLibrary.pdb
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\PrimerEntrega\MyLibrary\bin\Debug\MyLibrary.exe.config
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\PrimerEntrega\MyLibrary\bin\Debug\MyLibrary.exe
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\PrimerEntrega\MyLibrary\bin\Debug\MyLibrary.pdb
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\PrimerEntrega\MyLibrary\obj\Debug\MyLibrary.csprojAssemblyReference.cache
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\PrimerEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\PrimerEntrega\MyLibrary\obj\Debug\MyLibrary.exe
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\PrimerEntrega\MyLibrary\obj\Debug\MyLibrary.pdb
