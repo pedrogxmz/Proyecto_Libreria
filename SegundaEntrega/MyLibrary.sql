@@ -1,3 +1,9 @@
+--CÓDIGO PARA ACTUALIZAR LAS TABLAS
+
+drop table if exists users;
+drop table if exists borrows;
+drop table if exists books;
+
 --CODIGO PARA CREAR LAS TABLAS--
 
 create table users
@@ -28,6 +34,13 @@ create table borrows
 
 create unique index borrows_user_id_book_id_uindex
     on borrows (user_id, book_id);
+
+create table editorials
+(
+    id INTEGER primary key,
+    editorial   TEXT not null unique
+);
+
 
 --CODIGO PARA AGREGAR VALORES A LAS TABLAS--
 
@@ -67,3 +80,10 @@ INSERT INTO borrows (user_id, book_id) VALUES (843281, 6223628);
 INSERT INTO borrows (user_id, book_id) VALUES (656219, 6277124);
 INSERT INTO borrows (user_id, book_id) VALUES (843281, 7325639);
 INSERT INTO borrows (user_id, book_id) VALUES (656219, 8334419);
+
+INSERT INTO editorials (id, editorial) VALUES (0, 'Pearson');
+INSERT INTO editorials (id, editorial) VALUES (1, 'McGrawHill');
+INSERT INTO editorials (id, editorial) VALUES (2, 'Alfaomega');
+INSERT INTO editorials (id, editorial) VALUES (3, 'Dextra');
+INSERT INTO editorials (id, editorial) VALUES (4, 'Paraninfo');
+INSERT INTO editorials (id, editorial) VALUES (5, 'Patria');
