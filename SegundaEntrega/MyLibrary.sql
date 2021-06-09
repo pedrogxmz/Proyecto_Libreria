@@ -3,6 +3,7 @@
 drop table if exists users;
 drop table if exists borrows;
 drop table if exists books;
+drop table if exists editorials;
 
 --CODIGO PARA CREAR LAS TABLAS--
 
@@ -19,7 +20,8 @@ create table books
     copies       INTEGER not null,
     title        TEXT    not null,
     author       TEXT    not null,
-    editorial_id INTEGER not null,
+    editorial_id INTEGER not null
+        references editorials (id),
     edition      INTEGER not null,
     year         INTEGER not null
 );
@@ -27,13 +29,11 @@ create table books
 create table borrows
 (
     user_id INTEGER not null
-        references users,
+        references users (id),
     book_id INTEGER not null
-        references books
+        references books (id),
+    unique (user_id,book_id)
 );
-
-create unique index borrows_user_id_book_id_uindex
-    on borrows (user_id, book_id);
 
 create table editorials
 (
