@@ -116,6 +116,19 @@ INSERT INTO borrows (user_id, book_id) VALUES (656219, 8334419);
 
 --------------------------------INVENTARIO----------------------------------
 
+--Alta de libros --
 
+--Arribo de libros --
+
+--Eliminar libros --
+
+--Baja de libros --
+
+    DELETE FROM books WHERE id = 2689674;
+
+        SELECT l.id, l.title||' - '||l.author AS info_libro
+        FROM books l
+        INNER JOIN borrows b on l.id = b.book_id
+        WHERE book_id = 6223628;
 
 
