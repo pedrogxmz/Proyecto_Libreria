@@ -1,4 +1,4 @@
-
+--------------------CREACIÓN DE TABLAS Y BASE DE DATOS-------------------------------
 drop table if exists borrows;
 drop table if exists books;
 drop table if exists editorials;
@@ -37,7 +37,7 @@ create table editorials
     id INTEGER primary key,
     editorial   TEXT not null unique
 );
-
+--------- CARGADO DE ARCHIVOS A LAS TABLAS----------------------------------
 INSERT INTO users (id, first_name, last_name) VALUES (656219, 'Erika', 'Valdes');
 INSERT INTO users (id, first_name, last_name) VALUES (843281, 'Guillermo', 'Farias');
 INSERT INTO users (id, first_name, last_name) VALUES (696870, 'Miguel', 'Zapata');
@@ -110,9 +110,56 @@ INSERT INTO borrows (user_id, book_id) VALUES (656219, 8334419);
 
 --PENDIENTES--
 
+SELECT users.first_name || ',' || users.last_name AS full_name, books.title
+FROM borrows
+INNER JOIN books ON borrows.book_id = books.id
+INNER JOIN users ON borrows.user_id = users.id
+ORDER BY full_name;
+
 --SOLICITAR--
 
+    --Lista de usuarios ordenados por apellidos
+SELECT id, first_name || ' ' || last_name AS full_name
+FROM users
+ORDER BY last_name;
+
+    --LIsta de libros disponibles en la biblioteca
+SELECT id, title
+FROM books
+ORDER BY title;
+INSERT INTO borrows VALUES (904872, 6223628);
+
+    --Copias en prestamo del libro seleccionado
+SELECT id, title, count(id) AS num_copias_prestadas
+FROM books
+INNER JOIN borrows b on books.id = b.book_id
+WHERE book_id = 6223628
+GROUP BY title, id;
+
+    --Numero de copias del libro seleccionado
+SELECT copies, title FROM books WHERE id = 6223628;
+
+    --Crear préstamo
+INSERT INTO borrows  (user_id, book_id) VALUES (1234, 5678); --Los valores son variables acorde a los elementos seleccionados anteriormente
+
+
 --DEVOLVER--
+    --- libros en préstamo
+SELECT DISTINCT book_id, title AS libros_en_prestamo
+FROM borrows
+INNER JOIN books ON books.id= borrows.book_id
+ORDER BY book_id;
+
+    -- usuarios con el libro seleccionado anteriormente
+SELECT first_name || ' ' || users.last_name AS full_name
+FROM borrows
+INNER JOIN users ON users.id = borrows.user_id
+WHERE book_id = 1234 -- Elemento variable según combobox
+ORDER BY full_name;
+
+    --Eliminar préstamo del usuario seleccionado
+DELETE FROM borrows WHERE (user_id= 1234, book_id = 1234) -- Los numeros son elementos variables según opciones anteriores
+
 
 --------------------------------INVENTARIO----------------------------------
 
