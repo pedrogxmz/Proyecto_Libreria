@@ -100,11 +100,11 @@ INSERT INTO borrows (user_id, book_id) VALUES (656219, 8334419);
     INSERT INTO users (id, first_name, last_name) VALUES (123456,'NombrePrueba','ApellidoPrueba');
 
 --ELIMINAR USUARIO--
-    DELETE FROM users WHERE id =  843281; --id = int id;
+    DELETE FROM users WHERE id =  904872; --id = int id;
 
         SELECT title FROM books
         INNER JOIN borrows b on books.id = b.book_id
-        WHERE b.user_id = 843281
+        WHERE b.user_id = 904872
         ORDER BY title;
 --------------------------------MENU PRESTAMOS-----------------------------
 
@@ -117,18 +117,23 @@ INSERT INTO borrows (user_id, book_id) VALUES (656219, 8334419);
 --------------------------------INVENTARIO----------------------------------
 
 --Alta de libros --
+    INSERT INTO books (id, copies, title, author, editorial_id, edition, year)
+    VALUES (1234567, 0, 'Título', 'Autor', '-', '--', '----');
 
 --Arribo de libros --
+    UPDATE books SET copies = copies + 2 WHERE id = 1509482;
+        SELECT id, copies, title||' - '||author AS info_libro FROM books
+        WHERE id = 1509482;
 
 --Eliminar libros --
+    UPDATE books SET copies = copies - 2 WHERE id = 1509482;
+        SELECT id, copies, title||' - '||author AS info_libro FROM books
+        WHERE id = 1509482;
 
 --Baja de libros --
+    DELETE FROM books WHERE id = 8334419;
 
-    DELETE FROM books WHERE id = 2689674;
-
-        SELECT l.id, l.title||' - '||l.author AS info_libro
-        FROM books l
-        INNER JOIN borrows b on l.id = b.book_id
-        WHERE book_id = 6223628;
-
+        SELECT id, title||' - '||author AS info_libro FROM books
+        INNER JOIN borrows b on id = b.book_id
+        WHERE book_id = 8334419;
 
