@@ -100,11 +100,11 @@ INSERT INTO borrows (user_id, book_id) VALUES (656219, 8334419);
     INSERT INTO users (id, first_name, last_name) VALUES (123456,'NombrePrueba','ApellidoPrueba');
 
 --ELIMINAR USUARIO--
-    DELETE FROM users WHERE id =  843281; --id = int id;
+    DELETE FROM users WHERE id =  904872; --id = int id;
 
         SELECT title FROM books
         INNER JOIN borrows b on books.id = b.book_id
-        WHERE b.user_id = 843281
+        WHERE b.user_id = 904872
         ORDER BY title;
 --------------------------------MENU PRESTAMOS-----------------------------
 
@@ -158,11 +158,29 @@ WHERE book_id = 1234 -- Elemento variable según combobox
 ORDER BY full_name;
 
     --Eliminar préstamo del usuario seleccionado
-DELETE FROM borrows WHERE (user_id= 1234, book_id = 1234) -- Los numeros son elementos variables según opciones anteriores
+DELETE FROM borrows WHERE user_id= 1234;-- Los numeros son elementos variables según opciones anteriores
 
 
 --------------------------------INVENTARIO----------------------------------
 
+--Alta de libros --
+    INSERT INTO books (id, copies, title, author, editorial_id, edition, year)
+    VALUES (1234567, 0, 'Título', 'Autor', '-', '--', '----');
 
+--Arribo de libros --
+    UPDATE books SET copies = copies + 2 WHERE id = 1509482;
+        SELECT id, copies, title||' - '||author AS info_libro FROM books
+        WHERE id = 1509482;
 
+--Eliminar libros --
+    UPDATE books SET copies = copies - 2 WHERE id = 1509482;
+        SELECT id, copies, title||' - '||author AS info_libro FROM books
+        WHERE id = 1509482;
+
+--Baja de libros --
+    DELETE FROM books WHERE id = 8334419;
+
+        SELECT id, title||' - '||author AS info_libro FROM books
+        INNER JOIN borrows b on id = b.book_id
+        WHERE book_id = 8334419;
 
