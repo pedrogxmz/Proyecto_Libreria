@@ -180,7 +180,7 @@ DELETE FROM borrows WHERE user_id= 1234;-- Los numeros son elementos variables s
 --Baja de libros --
     DELETE FROM books WHERE id = 8334419;
 
-        SELECT id, title||' - '||author AS info_libro FROM books
-        INNER JOIN borrows b on id = b.book_id
+        SELECT users.first_name|| '-' || users.last_name AS En_prestamo_a,users.id FROM users
+        INNER JOIN borrows b on users.id = b.user_id
         WHERE book_id = 8334419;
 
