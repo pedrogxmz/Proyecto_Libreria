@@ -127,13 +127,13 @@ ORDER BY last_name;
 SELECT id, title
 FROM books
 ORDER BY title;
-INSERT INTO borrows VALUES (904872, 6223628);
+
 
     --Copias en prestamo del libro seleccionado
 SELECT id, title, count(id) AS num_copias_prestadas
 FROM books
 INNER JOIN borrows b on books.id = b.book_id
-WHERE book_id = 6223628
+WHERE book_id = 6223628 --Numero variable
 GROUP BY title, id;
 
     --Numero de copias del libro seleccionado
@@ -154,11 +154,11 @@ ORDER BY book_id;
 SELECT first_name || ' ' || users.last_name AS full_name
 FROM borrows
 INNER JOIN users ON users.id = borrows.user_id
-WHERE book_id = 1234 -- Elemento variable según combobox
+WHERE book_id = 6223628 -- Elemento variable según combobox
 ORDER BY full_name;
 
     --Eliminar préstamo del usuario seleccionado
-DELETE FROM borrows WHERE user_id= 1234;-- Los numeros son elementos variables según opciones anteriores
+DELETE FROM borrows WHERE user_id= 1234 AND book_id = 5678;-- Los numeros son elementos variables según opciones anteriores
 
 
 --------------------------------INVENTARIO----------------------------------
