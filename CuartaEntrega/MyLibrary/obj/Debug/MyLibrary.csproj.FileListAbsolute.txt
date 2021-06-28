@@ -1,0 +1,17 @@
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\bin\Debug\MyLibrary.exe.config
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\bin\Debug\MyLibrary.exe
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\bin\Debug\MyLibrary.pdb
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\bin\Debug\System.Data.SQLite.dll
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.AssemblyReference.cache
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Properties.Resources.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.GenerateResource.cache
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.exe
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.pdb
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.MainForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.UsuariosPorNombreForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.UsuariosPorApellidoForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.UsuariosPorIdForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.AgregarUsuarioForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.EliminarUsuarioForm.resources
