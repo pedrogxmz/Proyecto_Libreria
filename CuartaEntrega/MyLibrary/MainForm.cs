@@ -56,5 +56,16 @@ namespace MyLibrary
             EliminarUsuarioForm Form = new EliminarUsuarioForm(library);
             Form.ShowDialog();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pendientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PendingBorrowForm Form = new PendingBorrowForm(library);
+            Form.ShowDialog();
+        }
     }
 }

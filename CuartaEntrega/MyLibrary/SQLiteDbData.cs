@@ -13,11 +13,13 @@ namespace SQLiteDb
         public string FirstName { get; }
         public string LastName { get; }
 
+
         public Users(int id, string firstname, string lastname)
         {
             Id = id;
             FirstName = firstname;
             LastName = lastname;
+
         }
     }
     public class PrestamosPendientes
@@ -29,6 +31,18 @@ namespace SQLiteDb
         {
             this.Book_Id = id;
             this.Title = title;
+        }
+    }
+
+    public class UsuariosConPrestamo
+    {
+        public int User_Id { get; }
+        public string Full_Name { get; }
+
+        public UsuariosConPrestamo(int user_Id, string full_Name)
+        {
+            User_Id = user_Id;
+            Full_Name = full_Name;
         }
     }
 
@@ -132,6 +146,23 @@ namespace SQLiteDb
             }
             return prestamos;
         }
+        public List<UsuariosConPrestamo> GetUsersWithBorrows()
+        {
+            List<UsuariosConPrestamo> users = new List<UsuariosConPrestamo>();
+            string sql = "  SELECT DISTINCT  user_id AS user_id, first_name || ' ' || last_name AS full_name FROM  borrows"
+                            +" INNER JOIN users u on borrows.user_id = u.id"
+                            +" ORDER BY user_id; ";
 
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
+            {
+                while (rs.NextRecord())
+                {
+                    users.Add(new UsuariosConPrestamo (rs.GetInt32("user_id"),
+                                         rs.GetString("full_name")));
+                }
+            }
+
+            return users;
+        }
     }
 }
