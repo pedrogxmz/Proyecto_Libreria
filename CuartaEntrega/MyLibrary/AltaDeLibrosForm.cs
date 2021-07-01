@@ -12,9 +12,11 @@ namespace MyLibrary
 {
     public partial class AltaDeLibrosForm : Form
     {
-        public AltaDeLibrosForm()
+        private Library library;
+        public AltaDeLibrosForm(Library library)
         {
             InitializeComponent();
+            this.library = library;
         }
     }
 }

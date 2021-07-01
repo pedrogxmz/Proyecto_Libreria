@@ -56,6 +56,12 @@
     <Compile Include="AgregarUsuarioForm.Designer.cs">
       <DependentUpon>AgregarUsuarioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaDeLibrosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaDeLibrosForm.Designer.cs">
+      <DependentUpon>AltaDeLibrosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EliminarUsuarioForm.cs">
       <SubType>Form</SubType>
     </Compile>

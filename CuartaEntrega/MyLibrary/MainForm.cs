@@ -73,5 +73,11 @@ namespace MyLibrary
             ReturnBorrowForm Form = new ReturnBorrowForm(library);
             Form.ShowDialog();
         }
+
+        private void AltaDeLibroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AltaDeLibrosForm Form = new AltaDeLibrosForm(library);
+            Form.ShowDialog();
+        }
     }
 }
