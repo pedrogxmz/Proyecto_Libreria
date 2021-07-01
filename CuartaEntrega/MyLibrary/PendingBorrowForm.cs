@@ -32,5 +32,10 @@ namespace MyLibrary
         {
             Close();
         }
+
+        private void PendingBorrowForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

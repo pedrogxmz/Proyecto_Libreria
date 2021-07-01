@@ -49,6 +49,11 @@ namespace MyLibrary
         {
             return conn.GetUsersWithBorrows();
         }
+
+        public List<PrestamosPendientes> GetBorrowedBooks()
+        {
+            return conn.GetBorrowedBooks();
+        }
         public void Close() 
         {
             conn.Close();

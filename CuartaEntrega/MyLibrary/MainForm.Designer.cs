@@ -29,6 +29,7 @@ namespace MyLibrary
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,7 +78,7 @@ namespace MyLibrary
             this.ordenadosPorApellidoToolStripMenuItem,
             this.ordenadosPorIDToolStripMenuItem});
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.mostrarToolStripMenuItem.Text = "Mostrar";
             // 
             // ordenadosPorNombreToolStripMenuItem
@@ -104,14 +105,14 @@ namespace MyLibrary
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -143,6 +144,7 @@ namespace MyLibrary
             this.devolverToolStripMenuItem.Name = "devolverToolStripMenuItem";
             this.devolverToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.devolverToolStripMenuItem.Text = "Devolver";
+            this.devolverToolStripMenuItem.Click += new System.EventHandler(this.devolverToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem
             // 
@@ -165,12 +167,13 @@ namespace MyLibrary
             this.ClientSize = new System.Drawing.Size(367, 42);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MyLibrary";
+            this.Text = "My Library";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -46,6 +46,7 @@ namespace SQLiteDb
         }
     }
 
+
     public partial class SQLiteConn
     {
         public List<Users> UsuariosPorNombre()
@@ -163,6 +164,23 @@ namespace SQLiteDb
             }
 
             return users;
+        }
+
+        public List<PrestamosPendientes> GetBorrowedBooks()
+        {
+            List<PrestamosPendientes> prestamos = new List<PrestamosPendientes>();
+            string sql = "SELECT DISTINCT book_id, title FROM books"
+                        + " INNER JOIN borrows b on books.id = b.book_id"
+                        + " ORDER BY title";
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
+            {
+                while (rs.NextRecord())
+                {
+                    prestamos.Add(new PrestamosPendientes(rs.GetInt32("book_id"),
+                                                          rs.GetString("title")));
+                }
+            }
+            return prestamos;
         }
     }
 }

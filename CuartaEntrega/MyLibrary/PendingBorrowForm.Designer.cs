@@ -29,12 +29,13 @@ namespace MyLibrary
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PendingBorrowForm));
             this.cmbUsers = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvPendinBorrows = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.Book_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPendinBorrows)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,16 +73,6 @@ namespace MyLibrary
             this.dgvPendinBorrows.Size = new System.Drawing.Size(435, 337);
             this.dgvPendinBorrows.TabIndex = 2;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(360, 433);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Book_Id
             // 
             this.Book_Id.DataPropertyName = "book_id";
@@ -104,6 +95,16 @@ namespace MyLibrary
             this.title.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.title.Width = 382;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(360, 433);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(77, 30);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // PendingBorrowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -113,10 +114,12 @@ namespace MyLibrary
             this.Controls.Add(this.dgvPendinBorrows);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbUsers);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "PendingBorrowForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Prestamos Pendientes";
+            this.Load += new System.EventHandler(this.PendingBorrowForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPendinBorrows)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -33,3 +33,4 @@ D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Pro
 D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.exe
 D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.pdb
 D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.PendingBorrowForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.ReturnBorrowForm.resources

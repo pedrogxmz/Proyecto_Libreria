@@ -130,6 +130,7 @@ ORDER BY title;
 
 
     --Copias en prestamo del libro seleccionado
+
 SELECT id, title, count(id) AS num_copias_prestadas
 FROM books
 INNER JOIN borrows b on books.id = b.book_id

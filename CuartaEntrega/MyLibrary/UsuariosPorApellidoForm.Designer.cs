@@ -29,6 +29,7 @@ namespace MyLibrary
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuariosPorApellidoForm));
             this.dgvUsuariosPorApellido = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,37 +45,46 @@ namespace MyLibrary
             this.Id,
             this.FirstName,
             this.LastName});
-            this.dgvUsuariosPorApellido.Location = new System.Drawing.Point(12, 12);
+            this.dgvUsuariosPorApellido.Location = new System.Drawing.Point(16, 15);
+            this.dgvUsuariosPorApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvUsuariosPorApellido.Name = "dgvUsuariosPorApellido";
-            this.dgvUsuariosPorApellido.Size = new System.Drawing.Size(320, 340);
+            this.dgvUsuariosPorApellido.RowHeadersWidth = 51;
+            this.dgvUsuariosPorApellido.Size = new System.Drawing.Size(427, 418);
             this.dgvUsuariosPorApellido.TabIndex = 0;
             // 
             // Id
             // 
             this.Id.DataPropertyName = "Id";
             this.Id.HeaderText = "ID";
+            this.Id.MinimumWidth = 6;
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
+            this.Id.Width = 125;
             // 
             // FirstName
             // 
             this.FirstName.DataPropertyName = "FirstName";
             this.FirstName.HeaderText = "Nombre";
+            this.FirstName.MinimumWidth = 6;
             this.FirstName.Name = "FirstName";
             this.FirstName.ReadOnly = true;
+            this.FirstName.Width = 125;
             // 
             // LastName
             // 
             this.LastName.DataPropertyName = "LastName";
             this.LastName.HeaderText = "Apellido";
+            this.LastName.MinimumWidth = 6;
             this.LastName.Name = "LastName";
             this.LastName.ReadOnly = true;
+            this.LastName.Width = 125;
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(256, 375);
+            this.btn2.Location = new System.Drawing.Point(341, 462);
+            this.btn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(75, 23);
+            this.btn2.Size = new System.Drawing.Size(100, 28);
             this.btn2.TabIndex = 1;
             this.btn2.Text = "Cerrar";
             this.btn2.UseVisualStyleBackColor = true;
@@ -82,12 +92,14 @@ namespace MyLibrary
             // 
             // UsuariosPorApellidoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(344, 410);
+            this.ClientSize = new System.Drawing.Size(459, 505);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.dgvUsuariosPorApellido);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "UsuariosPorApellidoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

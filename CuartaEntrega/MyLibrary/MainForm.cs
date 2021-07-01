@@ -67,5 +67,11 @@ namespace MyLibrary
             PendingBorrowForm Form = new PendingBorrowForm(library);
             Form.ShowDialog();
         }
+
+        private void devolverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReturnBorrowForm Form = new ReturnBorrowForm(library);
+            Form.ShowDialog();
+        }
     }
 }

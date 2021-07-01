@@ -29,6 +29,7 @@ namespace MyLibrary
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarUsuarioForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -42,27 +43,30 @@ namespace MyLibrary
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(147, 17);
+            this.label1.Location = new System.Drawing.Point(196, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(58, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(347, 17);
+            this.label2.Location = new System.Drawing.Point(463, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Apellido";
             // 
             // btnAgregar
             // 
             this.btnAgregar.Enabled = false;
-            this.btnAgregar.Location = new System.Drawing.Point(449, 70);
+            this.btnAgregar.Location = new System.Drawing.Point(599, 86);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(100, 28);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -70,9 +74,10 @@ namespace MyLibrary
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(368, 70);
+            this.btnCancelar.Location = new System.Drawing.Point(491, 86);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(100, 28);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -81,39 +86,43 @@ namespace MyLibrary
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 17);
+            this.label3.Location = new System.Drawing.Point(17, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 13);
+            this.label3.Size = new System.Drawing.Size(19, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Id";
             // 
             // TbId
             // 
-            this.TbId.Location = new System.Drawing.Point(12, 42);
+            this.TbId.Location = new System.Drawing.Point(16, 52);
+            this.TbId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TbId.Name = "TbId";
-            this.TbId.Size = new System.Drawing.Size(108, 20);
+            this.TbId.Size = new System.Drawing.Size(143, 22);
             this.TbId.TabIndex = 8;
             // 
             // TbNombre
             // 
-            this.TbNombre.Location = new System.Drawing.Point(150, 42);
+            this.TbNombre.Location = new System.Drawing.Point(200, 52);
+            this.TbNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TbNombre.Name = "TbNombre";
-            this.TbNombre.Size = new System.Drawing.Size(174, 20);
+            this.TbNombre.Size = new System.Drawing.Size(231, 22);
             this.TbNombre.TabIndex = 9;
             // 
             // TbApellido
             // 
-            this.TbApellido.Location = new System.Drawing.Point(350, 42);
+            this.TbApellido.Location = new System.Drawing.Point(467, 52);
+            this.TbApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TbApellido.Name = "TbApellido";
-            this.TbApellido.Size = new System.Drawing.Size(174, 20);
+            this.TbApellido.Size = new System.Drawing.Size(231, 22);
             this.TbApellido.TabIndex = 10;
             this.TbApellido.TextChanged += new System.EventHandler(this.TbApellido_TextChanged);
             // 
             // AgregarUsuarioForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 104);
+            this.ClientSize = new System.Drawing.Size(723, 128);
             this.Controls.Add(this.TbApellido);
             this.Controls.Add(this.TbNombre);
             this.Controls.Add(this.TbId);
@@ -123,10 +132,12 @@ namespace MyLibrary
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "AgregarUsuarioForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AgregarUsuarioForm";
+            this.Text = "Agregar Usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 
