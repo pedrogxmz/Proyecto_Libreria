@@ -1,0 +1,121 @@
+﻿
+namespace MyLibrary
+{
+    partial class UsuariosPorIdForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuariosPorIdForm));
+            this.btn3 = new System.Windows.Forms.Button();
+            this.dgvUsuariosPorId = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuariosPorId)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btn3
+            // 
+            this.btn3.Location = new System.Drawing.Point(341, 462);
+            this.btn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(100, 28);
+            this.btn3.TabIndex = 3;
+            this.btn3.Text = "Cerrar";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            // 
+            // dgvUsuariosPorId
+            // 
+            this.dgvUsuariosPorId.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuariosPorId.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.FirstName,
+            this.LastName});
+            this.dgvUsuariosPorId.Location = new System.Drawing.Point(16, 15);
+            this.dgvUsuariosPorId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvUsuariosPorId.Name = "dgvUsuariosPorId";
+            this.dgvUsuariosPorId.RowHeadersWidth = 51;
+            this.dgvUsuariosPorId.Size = new System.Drawing.Size(427, 418);
+            this.dgvUsuariosPorId.TabIndex = 2;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "ID";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 125;
+            // 
+            // FirstName
+            // 
+            this.FirstName.DataPropertyName = "FirstName";
+            this.FirstName.HeaderText = "Nombre";
+            this.FirstName.MinimumWidth = 6;
+            this.FirstName.Name = "FirstName";
+            this.FirstName.ReadOnly = true;
+            this.FirstName.Width = 125;
+            // 
+            // LastName
+            // 
+            this.LastName.DataPropertyName = "LastName";
+            this.LastName.HeaderText = "Apellido";
+            this.LastName.MinimumWidth = 6;
+            this.LastName.Name = "LastName";
+            this.LastName.ReadOnly = true;
+            this.LastName.Width = 125;
+            // 
+            // UsuariosPorIdForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(459, 505);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.dgvUsuariosPorId);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.Name = "UsuariosPorIdForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "UsuariosPorId";
+            this.Load += new System.EventHandler(this.UsuariosPorIdForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuariosPorId)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.DataGridView dgvUsuariosPorId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
+    }
+}
