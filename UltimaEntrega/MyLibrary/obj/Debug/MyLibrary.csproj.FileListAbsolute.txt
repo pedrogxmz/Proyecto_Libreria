@@ -1,0 +1,75 @@
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\bin\Debug\MyLibrary.exe.config
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\bin\Debug\MyLibrary.exe
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\bin\Debug\MyLibrary.pdb
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\bin\Debug\System.Data.SQLite.dll
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.AssemblyReference.cache
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Properties.Resources.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.GenerateResource.cache
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.exe
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.pdb
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.MainForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.UsuariosPorNombreForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.UsuariosPorApellidoForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.UsuariosPorIdForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.AgregarUsuarioForm.resources
+D:\4 Semestre\Programación orientada a objetos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.EliminarUsuarioForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\bin\Debug\MyLibrary.exe.config
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\bin\Debug\MyLibrary.exe
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\bin\Debug\MyLibrary.pdb
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\bin\Debug\System.Data.SQLite.dll
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.csprojAssemblyReference.cache
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.AgregarUsuarioForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.EliminarUsuarioForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.MainForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.Properties.Resources.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorApellidoForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorIdForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorNombreForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.GenerateResource.cache
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.exe
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.pdb
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.PendingBorrowForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.ReturnBorrowForm.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\bin\Debug\MyLibrary.exe.config
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\bin\Debug\MyLibrary.exe
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\bin\Debug\MyLibrary.pdb
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\bin\Debug\System.Data.SQLite.dll
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.csprojAssemblyReference.cache
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.AgregarUsuarioForm.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.EliminarUsuarioForm.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.MainForm.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.PendingBorrowForm.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.Properties.Resources.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.ReturnBorrowForm.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorApellidoForm.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorIdForm.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorNombreForm.resources
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.GenerateResource.cache
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.exe
+C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\CuartaEntrega\MyLibrary\obj\Debug\MyLibrary.pdb
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\bin\Debug\MyLibrary.exe.config
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\bin\Debug\MyLibrary.exe
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\bin\Debug\MyLibrary.pdb
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\bin\Debug\System.Data.SQLite.dll
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.AssemblyReference.cache
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.AgregarUsuarioForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.AltaDeLibrosForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.EliminarUsuarioForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.MainForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.PendingBorrowForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.Properties.Resources.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.ReturnBorrowForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorApellidoForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorIdForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorNombreForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.GenerateResource.cache
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.exe
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.pdb
