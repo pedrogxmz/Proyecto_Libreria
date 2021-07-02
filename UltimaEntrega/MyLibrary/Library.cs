@@ -68,7 +68,8 @@ namespace MyLibrary
             => conn.AltaDeLibro(id, copies, title, author, editorial_id, edition, year);
         public bool ValidarEditorialId(int editorial_id)
             => conn.ValidarEditorialId(editorial_id);
-
+        public void AgregarCopias(int id, int copias)
+            => conn.AgregarCopias(id, copias);
 
         public void Close() 
         {

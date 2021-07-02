@@ -183,7 +183,9 @@ namespace MyLibrary
             this.Controls.Add(this.tbTitulo);
             this.Controls.Add(this.TbID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "AltaDeLibrosForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AltaDeLibrosForm";
             this.ResumeLayout(false);
             this.PerformLayout();

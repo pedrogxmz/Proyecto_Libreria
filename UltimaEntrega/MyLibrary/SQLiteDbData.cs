@@ -303,5 +303,20 @@ namespace SQLiteDb
             string sql = $"DELETE FROM books WHERE id = {id}";
             ExecuteNonQuery(sql);
         }
+        public void AgregarCopias(int id, int copias)
+        {
+            var CopiasEnInventario = new List<BookCopies>();
+            using (SQLiteRecordSet rs = ExecuteQuery($"SELECT copies FROM books WHERE id = {id}"))
+            {
+                while (rs.NextRecord())
+                {
+                    CopiasEnInventario.Add(new BookCopies(rs.GetInt32("copies")));
+                }
+            }
+            int NuevasCopias = CopiasEnInventario[0].Copies + copias;
+
+            string sql = $"UPDATE books SET copies = {NuevasCopias} WHERE id = {id}";
+            ExecuteNonQuery(sql);
+        }
     }
 }

@@ -95,6 +95,7 @@ namespace MyLibrary
         private void arriboDeLibrosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ArriboDeLibrosForm Form = new ArriboDeLibrosForm(library);
+            Form.ShowDialog();
         }
     }
 }
