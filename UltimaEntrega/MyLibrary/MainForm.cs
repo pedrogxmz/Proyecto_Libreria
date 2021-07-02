@@ -79,5 +79,17 @@ namespace MyLibrary
             AltaDeLibrosForm Form = new AltaDeLibrosForm(library);
             Form.ShowDialog();
         }
+
+        private void eliminarLibrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarLibroForm Form = new EliminarLibroForm(library);
+            Form.ShowDialog();
+        }
+
+        private void darDeBajaLibroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BajaDeLibroForm Form = new BajaDeLibroForm(library);
+            Form.ShowDialog();
+        }
     }
 }

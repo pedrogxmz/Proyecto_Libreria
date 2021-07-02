@@ -67,6 +67,27 @@ namespace SQLiteDb
             Year = year;
         }
     }
+    public class BookCopies
+    {
+        public int Copies { get; }
+
+        public BookCopies(int copies)
+        {
+            Copies = copies;
+        }
+    }
+    public class BorrowsCopies
+    {
+        public int Copies { get; }
+
+        public BorrowsCopies(int copies)
+        {
+            Copies = copies;
+        }
+    }
+
+
+
 
     public partial class SQLiteConn
     {
@@ -81,9 +102,9 @@ namespace SQLiteDb
             {
                 while (rs.NextRecord())
                 {
-                   usuarios.Add(new Users(rs.GetInt32("id"),
-                                          rs.GetString("first_name"),
-                                          rs.GetString("last_name")));
+                    usuarios.Add(new Users(rs.GetInt32("id"),
+                                           rs.GetString("first_name"),
+                                           rs.GetString("last_name")));
                 }
             }
             return usuarios;
@@ -109,7 +130,7 @@ namespace SQLiteDb
         public List<Users> UsuariosPorId()
         {
             List<Users> usuarios = new List<Users>();
-            
+
             string sql = "SELECT id, first_name, last_name FROM users"
                       + " ORDER BY id";
 
@@ -124,10 +145,10 @@ namespace SQLiteDb
             }
             return usuarios;
         }
-        public bool ValidarId(int id) 
+        public bool ValidarId(int id)
         {
             string sql = $"SELECT * FROM users WHERE id = {id}";
-            using (SQLiteRecordSet rs = ExecuteQuery(sql)) 
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
             {
                 return rs.NextRecord();
             }
@@ -172,14 +193,14 @@ namespace SQLiteDb
         {
             List<UsuariosConPrestamo> users = new List<UsuariosConPrestamo>();
             string sql = "  SELECT DISTINCT  user_id AS user_id, first_name || ' ' || last_name AS full_name FROM  borrows"
-                            +" INNER JOIN users u on borrows.user_id = u.id"
-                            +" ORDER BY user_id; ";
+                            + " INNER JOIN users u on borrows.user_id = u.id"
+                            + " ORDER BY user_id; ";
 
             using (SQLiteRecordSet rs = ExecuteQuery(sql))
             {
                 while (rs.NextRecord())
                 {
-                    users.Add(new UsuariosConPrestamo (rs.GetInt32("user_id"),
+                    users.Add(new UsuariosConPrestamo(rs.GetInt32("user_id"),
                                          rs.GetString("full_name")));
                 }
             }
@@ -204,9 +225,74 @@ namespace SQLiteDb
             return prestamos;
         }
         public void AltaDeLibro(int id, int copies, string title, string author, int editorial_id, int edition, int year)
+        {
+            string sql = "INSERT INTO books(id, copies, title, author, editorial_id, edition, year)"
+                    + $"VALUES('{id}', '{0}','{title}','{author}','{editorial_id }','{edition}','{year}',)";
+            ExecuteNonQuery(sql);
+        }
+        public bool ValidarBookId(int id)
+        {
+            string sql = $"SELECT * FROM books WHERE id = {id}";
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
             {
-        string sql = "INSERT INTO books(id, copies, title, author, editorial_id, edition, year)"
-                + $"VALUES('{id}', '{0}','{title}','{author}','{editorial_id }','{edition}','{year}',)";
+                return rs.NextRecord();
+            }
+        }
+        public bool ValidarCopias(int id, int Copias)
+        {
+            var CopiasEnInventario = new List<BookCopies>();
+            var CopiasEnPrestamo = new List<BorrowsCopies>();
+
+            using (SQLiteRecordSet rs = ExecuteQuery($"SELECT copies FROM books WHERE id = {id}"))
+            {
+                while (rs.NextRecord())
+                {
+                    CopiasEnInventario.Add(new BookCopies(rs.GetInt32("copies")));
+                }
+            }
+            using (SQLiteRecordSet rs = ExecuteQuery($"SELECT user_id FROM borrows WHERE book_id = {id}"))
+            {
+                while (rs.NextRecord())
+                {
+                    CopiasEnPrestamo.Add(new BorrowsCopies(rs.GetInt32("user_id")));
+                }
+            }
+            int copiasdisponibles = CopiasEnInventario[0].Copies - CopiasEnPrestamo.Count;
+            if (copiasdisponibles == Copias || copiasdisponibles > Copias)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public void EliminarCopias(int id, int copias)
+        {
+            var CopiasEnInventario = new List<BookCopies>();
+            using (SQLiteRecordSet rs = ExecuteQuery($"SELECT copies FROM books WHERE id = {id}"))
+            {
+                while (rs.NextRecord())
+                {
+                    CopiasEnInventario.Add(new BookCopies(rs.GetInt32("copies")));
+                }
+            }
+            int NuevasCopias = CopiasEnInventario[0].Copies - copias;
+
+            string sql = $"UPDATE books SET copies = {NuevasCopias} WHERE id = {id}";
+            ExecuteNonQuery(sql);
+        }
+        public bool ValidarPrestamosPorBookId(int id)
+        {
+            string sql = $"SELECT * FROM borrows WHERE book_id = {id}";
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
+            {
+                return rs.NextRecord();
+            }
+        } 
+        public void BajaDeLibro(int id)
+        {
+            string sql = $"DELETE FROM books WHERE id = {id}";
             ExecuteNonQuery(sql);
         }
     }

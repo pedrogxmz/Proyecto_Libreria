@@ -62,6 +62,18 @@
     <Compile Include="AltaDeLibrosForm.Designer.cs">
       <DependentUpon>AltaDeLibrosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BajaDeLibroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BajaDeLibroForm.Designer.cs">
+      <DependentUpon>BajaDeLibroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarLibroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarLibroForm.Designer.cs">
+      <DependentUpon>EliminarLibroForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EliminarUsuarioForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +126,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AltaDeLibrosForm.resx">
       <DependentUpon>AltaDeLibrosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BajaDeLibroForm.resx">
+      <DependentUpon>BajaDeLibroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarLibroForm.resx">
+      <DependentUpon>EliminarLibroForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarUsuarioForm.resx">
       <DependentUpon>EliminarUsuarioForm.cs</DependentUpon>

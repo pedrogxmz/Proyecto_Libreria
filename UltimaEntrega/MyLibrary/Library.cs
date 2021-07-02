@@ -54,6 +54,18 @@ namespace MyLibrary
         {
             return conn.GetBorrowedBooks();
         }
+        public bool ValidarBookId(int id)
+            => conn.ValidarBookId(id);
+        public bool ValidarCopias(int id, int copias)
+            => conn.ValidarCopias(id, copias);
+        public void EliminarCopias(int id, int copias)
+            => conn.EliminarCopias(id, copias);
+        public bool ValidarPrestamosPorBookId(int id)
+            => conn.ValidarPrestamosPorBookId(id);
+        public void BajaDeLibro(int id)
+            => conn.BajaDeLibro(id);
+        
+
         public void Close() 
         {
             conn.Close();

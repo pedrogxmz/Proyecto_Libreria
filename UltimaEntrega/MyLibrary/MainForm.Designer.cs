@@ -43,8 +43,11 @@ namespace MyLibrary
             this.solicitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.devolverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AltaDeLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arriboDeLibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarLibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darDeBajaLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,30 +134,40 @@ namespace MyLibrary
             // pendientesToolStripMenuItem
             // 
             this.pendientesToolStripMenuItem.Name = "pendientesToolStripMenuItem";
-            this.pendientesToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.pendientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pendientesToolStripMenuItem.Text = "Pendientes";
             this.pendientesToolStripMenuItem.Click += new System.EventHandler(this.pendientesToolStripMenuItem_Click);
             // 
             // solicitarToolStripMenuItem
             // 
             this.solicitarToolStripMenuItem.Name = "solicitarToolStripMenuItem";
-            this.solicitarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.solicitarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.solicitarToolStripMenuItem.Text = "Solicitar";
             // 
             // devolverToolStripMenuItem
             // 
             this.devolverToolStripMenuItem.Name = "devolverToolStripMenuItem";
-            this.devolverToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.devolverToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.devolverToolStripMenuItem.Text = "Devolver";
             this.devolverToolStripMenuItem.Click += new System.EventHandler(this.devolverToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem
             // 
             this.inventarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AltaDeLibroToolStripMenuItem});
+            this.AltaDeLibroToolStripMenuItem,
+            this.arriboDeLibrosToolStripMenuItem,
+            this.eliminarLibrosToolStripMenuItem,
+            this.darDeBajaLibroToolStripMenuItem});
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
             this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.inventarioToolStripMenuItem.Text = "Inventario";
+            // 
+            // AltaDeLibroToolStripMenuItem
+            // 
+            this.AltaDeLibroToolStripMenuItem.Name = "AltaDeLibroToolStripMenuItem";
+            this.AltaDeLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AltaDeLibroToolStripMenuItem.Text = "Alta de Libro";
+            this.AltaDeLibroToolStripMenuItem.Click += new System.EventHandler(this.AltaDeLibroToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -163,12 +176,25 @@ namespace MyLibrary
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // AltaDeLibroToolStripMenuItem
+            // arriboDeLibrosToolStripMenuItem
             // 
-            this.AltaDeLibroToolStripMenuItem.Name = "AltaDeLibroToolStripMenuItem";
-            this.AltaDeLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.AltaDeLibroToolStripMenuItem.Text = "Alta de Libro";
-            this.AltaDeLibroToolStripMenuItem.Click += new System.EventHandler(this.AltaDeLibroToolStripMenuItem_Click);
+            this.arriboDeLibrosToolStripMenuItem.Name = "arriboDeLibrosToolStripMenuItem";
+            this.arriboDeLibrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arriboDeLibrosToolStripMenuItem.Text = "Arribo de libros ";
+            // 
+            // eliminarLibrosToolStripMenuItem
+            // 
+            this.eliminarLibrosToolStripMenuItem.Name = "eliminarLibrosToolStripMenuItem";
+            this.eliminarLibrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarLibrosToolStripMenuItem.Text = "Eliminar libros ";
+            this.eliminarLibrosToolStripMenuItem.Click += new System.EventHandler(this.eliminarLibrosToolStripMenuItem_Click);
+            // 
+            // darDeBajaLibroToolStripMenuItem
+            // 
+            this.darDeBajaLibroToolStripMenuItem.Name = "darDeBajaLibroToolStripMenuItem";
+            this.darDeBajaLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.darDeBajaLibroToolStripMenuItem.Text = "Dar de baja libro";
+            this.darDeBajaLibroToolStripMenuItem.Click += new System.EventHandler(this.darDeBajaLibroToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -209,6 +235,9 @@ namespace MyLibrary
         private System.Windows.Forms.ToolStripMenuItem solicitarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem devolverToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AltaDeLibroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem arriboDeLibrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarLibrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darDeBajaLibroToolStripMenuItem;
     }
 }
 

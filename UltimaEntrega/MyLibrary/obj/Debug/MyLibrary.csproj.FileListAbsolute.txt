@@ -73,3 +73,5 @@ D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega
 D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
 D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.exe
 D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.pdb
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.EliminarLibroForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.BajaDeLibroForm.resources
