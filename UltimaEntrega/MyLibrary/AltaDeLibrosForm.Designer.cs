@@ -92,6 +92,7 @@ namespace MyLibrary
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Enabled = false;
             this.btnAgregar.Location = new System.Drawing.Point(502, 138);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(91, 23);
@@ -116,6 +117,7 @@ namespace MyLibrary
             this.tbAño.Name = "tbAño";
             this.tbAño.Size = new System.Drawing.Size(91, 20);
             this.tbAño.TabIndex = 4;
+            this.tbAño.TextChanged += new System.EventHandler(this.tbAño_TextChanged);
             // 
             // tbEditorial
             // 

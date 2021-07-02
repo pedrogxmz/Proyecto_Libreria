@@ -35,32 +35,36 @@ namespace MyLibrary
             int edition = Convert.ToInt32((string)tbEdicion.Text);
             int year = Convert.ToInt32((string)tbAño.Text);
 
-            if (!library.ValidarBookId(id) & library.ValidarEditorialId(editorial_id))
+            if (!library.ValidarBookId(id)) // library.ValidarEditorialId(editorial_id))
             {
-                library.AltaDeLibro(id, copies , title, author, editorial_id, edition, year);
-                MessageBox.Show($"{id} {title} {author}  ha sido agregado",
-                              "Confirmación",
-                               MessageBoxButtons.OK,
-                               MessageBoxIcon.Information);
-                Close();
+                if (library.ValidarEditorialId(editorial_id))
+                {
+                    library.AltaDeLibro(id, copies, title, author, editorial_id, edition, year);
+                    MessageBox.Show($"{id} {title} {author}  ha sido agregado",
+                                  "Confirmación",
+                                   MessageBoxButtons.OK,
+                                   MessageBoxIcon.Information);
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show($"No existe el editorial id: {editorial_id}",
+                             "Error",
+                              MessageBoxButtons.OK,
+                              MessageBoxIcon.Information);
+                }
             }
-            else if (library.ValidarBookId(id))
+            else
             {
                 MessageBox.Show($"Ya existe un libro registrado con el ID: {id}",
                                "Error",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
-                Close();
-            }
-            else if (!library.ValidarEditorialId(editorial_id))
-            {
-                MessageBox.Show($"No existe el editorial id: {editorial_id}",
-                              "Error",
-                               MessageBoxButtons.OK,
-                               MessageBoxIcon.Information);
-                Close();
             }
         }
-
+        private void tbAño_TextChanged(object sender, EventArgs e)
+        {
+            btnAgregar.Enabled = true;
+        }
     }
 }

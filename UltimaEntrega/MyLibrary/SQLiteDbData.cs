@@ -226,9 +226,8 @@ namespace SQLiteDb
         }
         public void AltaDeLibro(int id, int copies, string title, string author, int editorial_id, int edition, int year)
         {
-            string sql = "INSERT INTO books(id, copies, title, author, editorial_id, edition, year)"
-                    + $" VALUES('{id}', '{0}','{title}','{author}','{editorial_id }','{edition}','{year}',)";
-
+            string sql = "INSERT INTO books (id, copies, title, author, editorial_id, edition, year)"
+                    + $" VALUES ('{id}','{0}','{title}','{author}','{editorial_id }','{edition}','{year}')";
             ExecuteNonQuery(sql);
         }
         public bool ValidarBookId(int id)

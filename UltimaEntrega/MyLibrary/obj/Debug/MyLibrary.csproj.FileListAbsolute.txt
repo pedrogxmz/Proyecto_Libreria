@@ -98,3 +98,4 @@ C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\UltimaEntrega\MyLibr
 C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\UltimaEntrega\MyLibrary\bin\Debug\System.Data.SQLite.dll
 C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
 C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.ArriboDeLibrosForm.resources
+D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.ArriboDeLibrosForm.resources
