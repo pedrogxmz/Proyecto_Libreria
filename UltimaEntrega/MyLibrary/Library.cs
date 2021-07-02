@@ -64,7 +64,11 @@ namespace MyLibrary
             => conn.ValidarPrestamosPorBookId(id);
         public void BajaDeLibro(int id)
             => conn.BajaDeLibro(id);
-        
+        public void AltaDeLibro(int id, int copies, string title, string author, int editorial_id, int edition, int year)
+            => conn.AltaDeLibro(id, copies, title, author, editorial_id, edition, year);
+        public bool ValidarEditorialId(int editorial_id)
+            => conn.ValidarEditorialId(editorial_id);
+
 
         public void Close() 
         {

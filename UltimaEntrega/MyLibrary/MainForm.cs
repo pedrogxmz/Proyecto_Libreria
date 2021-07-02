@@ -91,5 +91,10 @@ namespace MyLibrary
             BajaDeLibroForm Form = new BajaDeLibroForm(library);
             Form.ShowDialog();
         }
+
+        private void arriboDeLibrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ArriboDeLibrosForm Form = new ArriboDeLibrosForm(library);
+        }
     }
 }

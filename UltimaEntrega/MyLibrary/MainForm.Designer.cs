@@ -44,10 +44,10 @@ namespace MyLibrary
             this.devolverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AltaDeLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arriboDeLibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarLibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeBajaLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,20 +134,20 @@ namespace MyLibrary
             // pendientesToolStripMenuItem
             // 
             this.pendientesToolStripMenuItem.Name = "pendientesToolStripMenuItem";
-            this.pendientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pendientesToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.pendientesToolStripMenuItem.Text = "Pendientes";
             this.pendientesToolStripMenuItem.Click += new System.EventHandler(this.pendientesToolStripMenuItem_Click);
             // 
             // solicitarToolStripMenuItem
             // 
             this.solicitarToolStripMenuItem.Name = "solicitarToolStripMenuItem";
-            this.solicitarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.solicitarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.solicitarToolStripMenuItem.Text = "Solicitar";
             // 
             // devolverToolStripMenuItem
             // 
             this.devolverToolStripMenuItem.Name = "devolverToolStripMenuItem";
-            this.devolverToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.devolverToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.devolverToolStripMenuItem.Text = "Devolver";
             this.devolverToolStripMenuItem.Click += new System.EventHandler(this.devolverToolStripMenuItem_Click);
             // 
@@ -169,18 +169,12 @@ namespace MyLibrary
             this.AltaDeLibroToolStripMenuItem.Text = "Alta de Libro";
             this.AltaDeLibroToolStripMenuItem.Click += new System.EventHandler(this.AltaDeLibroToolStripMenuItem_Click);
             // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
             // arriboDeLibrosToolStripMenuItem
             // 
             this.arriboDeLibrosToolStripMenuItem.Name = "arriboDeLibrosToolStripMenuItem";
             this.arriboDeLibrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.arriboDeLibrosToolStripMenuItem.Text = "Arribo de libros ";
+            this.arriboDeLibrosToolStripMenuItem.Click += new System.EventHandler(this.arriboDeLibrosToolStripMenuItem_Click);
             // 
             // eliminarLibrosToolStripMenuItem
             // 
@@ -195,6 +189,13 @@ namespace MyLibrary
             this.darDeBajaLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darDeBajaLibroToolStripMenuItem.Text = "Dar de baja libro";
             this.darDeBajaLibroToolStripMenuItem.Click += new System.EventHandler(this.darDeBajaLibroToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // MainForm
             // 

@@ -227,12 +227,21 @@ namespace SQLiteDb
         public void AltaDeLibro(int id, int copies, string title, string author, int editorial_id, int edition, int year)
         {
             string sql = "INSERT INTO books(id, copies, title, author, editorial_id, edition, year)"
-                    + $"VALUES('{id}', '{0}','{title}','{author}','{editorial_id }','{edition}','{year}',)";
+                    + $" VALUES('{id}', '{0}','{title}','{author}','{editorial_id }','{edition}','{year}',)";
+
             ExecuteNonQuery(sql);
         }
         public bool ValidarBookId(int id)
         {
             string sql = $"SELECT * FROM books WHERE id = {id}";
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
+            {
+                return rs.NextRecord();
+            }
+        }
+        public bool ValidarEditorialId(int editorial_id)
+        {
+            string sql = $"SELECT * FROM books WHERE editorial_id = {editorial_id}";
             using (SQLiteRecordSet rs = ExecuteQuery(sql))
             {
                 return rs.NextRecord();
