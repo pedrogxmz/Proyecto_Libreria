@@ -29,6 +29,7 @@ namespace MyLibrary
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BajaDeLibroForm));
             this.tbIdLibro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -83,6 +84,7 @@ namespace MyLibrary
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbIdLibro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "BajaDeLibroForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
