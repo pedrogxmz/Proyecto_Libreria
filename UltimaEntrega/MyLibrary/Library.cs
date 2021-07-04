@@ -89,6 +89,11 @@ namespace MyLibrary
         {
             return conn.ValidarDisponibilidad(id);
         }
+
+        public void PrestarLibro(int user_id, int book_id)
+        {
+             conn.PrestarLibro(user_id, book_id);
+        }
         public void Close() 
         {
             conn.Close();

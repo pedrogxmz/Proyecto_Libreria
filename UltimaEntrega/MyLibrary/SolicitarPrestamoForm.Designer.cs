@@ -68,6 +68,7 @@ namespace MyLibrary
             this.btnPrestar.TabIndex = 4;
             this.btnPrestar.Text = "Prestar";
             this.btnPrestar.UseVisualStyleBackColor = true;
+            this.btnPrestar.Click += new System.EventHandler(this.btnPrestar_Click);
             // 
             // btnSalir
             // 

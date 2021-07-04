@@ -43,7 +43,7 @@ namespace MyLibrary
 
             MessageBox.Show("Se devolverá el libro seleccionado por el usuario seleccionado, ¿desea continuar?",
                 "Confirmación",
-                MessageBoxButtons.OK,
+                MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Information);
 
             library.ReturnBook(user_id, book_id);

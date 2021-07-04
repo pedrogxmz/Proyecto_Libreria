@@ -261,8 +261,8 @@ namespace SQLiteDb
             {
                 while (rs.NextRecord())
                 {
-                    books.Add(new Books(  rs.GetString("Title"),
-                                          rs.GetInt32("Book_Id")));
+                    books.Add(new Books(  rs.GetString("title"),
+                                          rs.GetInt32("id")));
                 }
             }
 
@@ -387,11 +387,11 @@ namespace SQLiteDb
             {
                 while (rs.NextRecord())
                 {
-                    CopiasEnPrestamo.Add(new BorrowsCopies(rs.GetInt32("copies")));
+                    CopiasEnPrestamo.Add(new BorrowsCopies(rs.GetInt32("user_id")));
                 }
             }
 
-            if (CopiasEnPrestamo.Count < CopiasEnInventario.Count)
+            if (CopiasEnPrestamo.Count < CopiasEnInventario[0].Copies)
             {
                 indicador = true;
             } else
@@ -400,6 +400,11 @@ namespace SQLiteDb
             }
 
             return indicador;
+        }
+        public void PrestarLibro(int user_id, int book_id)
+        {
+            string sql = $"INSERT INTO borrows  (user_id, book_id) VALUES ({user_id}, {book_id})";
+            ExecuteNonQuery(sql);
         }
     }
 }

@@ -46,5 +46,25 @@ namespace MyLibrary
             int id = (int)cmbBooks.SelectedValue;
             btnPrestar.Enabled = library.ValidarDisponibilidad(id);
         }
+
+        private void btnPrestar_Click(object sender, EventArgs e)
+        {
+            int user_id = (int)cmbUser.SelectedValue;
+            int book_id = (int)cmbBooks.SelectedValue;
+
+            MessageBox.Show("Se aaginará a préstamo el libro seleccionado al usuario seleccionado , ¿desea continuar?",
+                "Confirmación",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
+            library.PrestarLibro(user_id, book_id);
+
+            MessageBox.Show("Préstamo realizado con éxito",
+               "Confirmación",
+               MessageBoxButtons.OK,
+               MessageBoxIcon.Information);
+            Close();
+
+        }
     }
 }
