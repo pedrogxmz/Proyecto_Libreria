@@ -33,9 +33,9 @@ namespace MyLibrary
             this.cmbUsers = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvPendinBorrows = new System.Windows.Forms.DataGridView();
-            this.Book_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
+            this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Book_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPendinBorrows)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,15 +73,15 @@ namespace MyLibrary
             this.dgvPendinBorrows.Size = new System.Drawing.Size(435, 337);
             this.dgvPendinBorrows.TabIndex = 2;
             // 
-            // Book_Id
+            // button1
             // 
-            this.Book_Id.DataPropertyName = "book_id";
-            this.Book_Id.Frozen = true;
-            this.Book_Id.HeaderText = "ID";
-            this.Book_Id.MinimumWidth = 6;
-            this.Book_Id.Name = "Book_Id";
-            this.Book_Id.ReadOnly = true;
-            this.Book_Id.Width = 125;
+            this.button1.Location = new System.Drawing.Point(360, 433);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(77, 30);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // title
             // 
@@ -95,15 +95,15 @@ namespace MyLibrary
             this.title.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.title.Width = 382;
             // 
-            // button1
+            // Book_Id
             // 
-            this.button1.Location = new System.Drawing.Point(360, 433);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Book_Id.DataPropertyName = "book_id";
+            this.Book_Id.Frozen = true;
+            this.Book_Id.HeaderText = "ID";
+            this.Book_Id.MinimumWidth = 6;
+            this.Book_Id.Name = "Book_Id";
+            this.Book_Id.ReadOnly = true;
+            this.Book_Id.Width = 125;
             // 
             // PendingBorrowForm
             // 

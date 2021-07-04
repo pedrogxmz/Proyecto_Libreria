@@ -54,6 +54,21 @@ namespace MyLibrary
         {
             return conn.GetBorrowedBooks();
         }
+
+        public List<UsuariosConPrestamo> GetBorrowsByBook(int id)
+        {
+            return conn.GetBorrowsByBook(id);
+        }
+
+        public List<Books> GetAllBooks()
+        {
+            return conn.GetAllBooks();
+        }
+
+        public void ReturnBook(int user_id, int book_id)
+        {
+            conn.ReturnBook( user_id, book_id);
+        }
         public bool ValidarBookId(int id)
             => conn.ValidarBookId(id);
         public bool ValidarCopias(int id, int copias)
@@ -70,7 +85,10 @@ namespace MyLibrary
             => conn.ValidarEditorialId(editorial_id);
         public void AgregarCopias(int id, int copias)
             => conn.AgregarCopias(id, copias);
-
+        public bool ValidarDisponibilidad (int id)
+        {
+            return conn.ValidarDisponibilidad(id);
+        }
         public void Close() 
         {
             conn.Close();

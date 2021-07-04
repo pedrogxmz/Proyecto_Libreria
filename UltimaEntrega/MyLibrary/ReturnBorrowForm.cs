@@ -20,11 +20,15 @@ namespace MyLibrary
             cmbBorrowedBooks.DisplayMember = "Title";
             cmbBorrowedBooks.ValueMember = "Book_Id";
             cmbBorrowedBooks.DataSource = library.GetBorrowedBooks();
+
         }
 
-        private void ReturnBorrowForm_Load(object sender, EventArgs e)
+        private void cmbBorrowedBooks_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            int id = (int)cmbBorrowedBooks.SelectedValue;
+            cmbUsersWithBorrows.DisplayMember = "Full_Name";
+            cmbUsersWithBorrows.ValueMember = "User_Id";
+            cmbUsersWithBorrows.DataSource = library.GetBorrowsByBook(id);
         }
 
         private void btnsalir_Click(object sender, EventArgs e)
@@ -32,8 +36,23 @@ namespace MyLibrary
             Close();
         }
 
-        private void BorrowedBooks_Click(object sender, EventArgs e)
+        private void btnDeleteBorrow_Click(object sender, EventArgs e)
         {
+            int user_id = (int)cmbUsersWithBorrows.SelectedValue;
+            int book_id = (int)cmbBorrowedBooks.SelectedValue;
+
+            MessageBox.Show("Se devolverá el libro seleccionado por el usuario seleccionado, ¿desea continuar?",
+                "Confirmación",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
+            library.ReturnBook(user_id, book_id);
+
+            MessageBox.Show("Devolución realizada con éxito",
+               "Confirmación",
+               MessageBoxButtons.OK,
+               MessageBoxIcon.Information);
+            Close();
 
         }
     }

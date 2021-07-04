@@ -107,6 +107,12 @@
     <Compile Include="ReturnBorrowForm.Designer.cs">
       <DependentUpon>ReturnBorrowForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SolicitarPrestamoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitarPrestamoForm.Designer.cs">
+      <DependentUpon>SolicitarPrestamoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SQLiteDb.cs" />
     <Compile Include="SQLiteDbData.cs" />
     <Compile Include="UsuariosPorApellidoForm.cs">
@@ -163,6 +169,9 @@
     </Compile>
     <EmbeddedResource Include="ReturnBorrowForm.resx">
       <DependentUpon>ReturnBorrowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolicitarPrestamoForm.resx">
+      <DependentUpon>SolicitarPrestamoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuariosPorApellidoForm.resx">
       <DependentUpon>UsuariosPorApellidoForm.cs</DependentUpon>

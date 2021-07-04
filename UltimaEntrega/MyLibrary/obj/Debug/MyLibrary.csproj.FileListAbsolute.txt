@@ -99,3 +99,27 @@ C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\UltimaEntrega\MyLibr
 C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
 C:\Users\JEBAM\Desktop\Proyecto libreria\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.ArriboDeLibrosForm.resources
 D:\4 Semestre\Programación orientada a objetos\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.ArriboDeLibrosForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csprojAssemblyReference.cache
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.AgregarUsuarioForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.AltaDeLibrosForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.ArriboDeLibrosForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.BajaDeLibroForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.EliminarLibroForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.EliminarUsuarioForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.MainForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.PendingBorrowForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.Properties.Resources.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.ReturnBorrowForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorApellidoForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorIdForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.UsuariosPorNombreForm.resources
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.GenerateResource.cache
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.exe
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.pdb
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\bin\Debug\MyLibrary.exe.config
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\bin\Debug\MyLibrary.exe
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\bin\Debug\MyLibrary.pdb
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\bin\Debug\System.Data.SQLite.dll
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
+D:\Documentos\CUARTO SEMESTRE\Programación Orientada a Objetos\PROYECTO POO\Proyecto_Libreria-\UltimaEntrega\MyLibrary\obj\Debug\MyLibrary.SolicitarPrestamoForm.resources

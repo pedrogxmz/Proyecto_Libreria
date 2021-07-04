@@ -32,10 +32,10 @@ namespace MyLibrary
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReturnBorrowForm));
             this.BorrowedBooks = new System.Windows.Forms.Label();
             this.cmbBorrowedBooks = new System.Windows.Forms.ComboBox();
-            this.UsersWithBorrows = new System.Windows.Forms.Label();
-            this.cmbUsersWithBorrows = new System.Windows.Forms.ComboBox();
             this.btnDeleteBorrow = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbUsersWithBorrows = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BorrowedBooks
@@ -47,7 +47,6 @@ namespace MyLibrary
             this.BorrowedBooks.Size = new System.Drawing.Size(57, 24);
             this.BorrowedBooks.TabIndex = 3;
             this.BorrowedBooks.Text = "Libro:";
-            this.BorrowedBooks.Click += new System.EventHandler(this.BorrowedBooks_Click);
             // 
             // cmbBorrowedBooks
             // 
@@ -58,26 +57,7 @@ namespace MyLibrary
             this.cmbBorrowedBooks.Name = "cmbBorrowedBooks";
             this.cmbBorrowedBooks.Size = new System.Drawing.Size(372, 30);
             this.cmbBorrowedBooks.TabIndex = 2;
-            // 
-            // UsersWithBorrows
-            // 
-            this.UsersWithBorrows.AutoSize = true;
-            this.UsersWithBorrows.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsersWithBorrows.Location = new System.Drawing.Point(12, 153);
-            this.UsersWithBorrows.Name = "UsersWithBorrows";
-            this.UsersWithBorrows.Size = new System.Drawing.Size(79, 24);
-            this.UsersWithBorrows.TabIndex = 5;
-            this.UsersWithBorrows.Text = "Usuario:";
-            // 
-            // cmbUsersWithBorrows
-            // 
-            this.cmbUsersWithBorrows.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbUsersWithBorrows.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbUsersWithBorrows.FormattingEnabled = true;
-            this.cmbUsersWithBorrows.Location = new System.Drawing.Point(190, 150);
-            this.cmbUsersWithBorrows.Name = "cmbUsersWithBorrows";
-            this.cmbUsersWithBorrows.Size = new System.Drawing.Size(257, 30);
-            this.cmbUsersWithBorrows.TabIndex = 4;
+            this.cmbBorrowedBooks.SelectedIndexChanged += new System.EventHandler(this.cmbBorrowedBooks_SelectedIndexChanged);
             // 
             // btnDeleteBorrow
             // 
@@ -87,6 +67,7 @@ namespace MyLibrary
             this.btnDeleteBorrow.TabIndex = 6;
             this.btnDeleteBorrow.Text = "Devolver Libro";
             this.btnDeleteBorrow.UseVisualStyleBackColor = true;
+            this.btnDeleteBorrow.Click += new System.EventHandler(this.btnDeleteBorrow_Click);
             // 
             // btnsalir
             // 
@@ -98,23 +79,43 @@ namespace MyLibrary
             this.btnsalir.UseVisualStyleBackColor = true;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 111);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 24);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Usuario:";
+            // 
+            // cmbUsersWithBorrows
+            // 
+            this.cmbUsersWithBorrows.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUsersWithBorrows.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUsersWithBorrows.FormattingEnabled = true;
+            this.cmbUsersWithBorrows.Location = new System.Drawing.Point(122, 108);
+            this.cmbUsersWithBorrows.Name = "cmbUsersWithBorrows";
+            this.cmbUsersWithBorrows.Size = new System.Drawing.Size(304, 30);
+            this.cmbUsersWithBorrows.TabIndex = 9;
+            // 
             // ReturnBorrowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 505);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbUsersWithBorrows);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.btnDeleteBorrow);
-            this.Controls.Add(this.UsersWithBorrows);
-            this.Controls.Add(this.cmbUsersWithBorrows);
             this.Controls.Add(this.BorrowedBooks);
             this.Controls.Add(this.cmbBorrowedBooks);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ReturnBorrowForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Devolver Préstamo";
-            this.Load += new System.EventHandler(this.ReturnBorrowForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,9 +125,9 @@ namespace MyLibrary
 
         private System.Windows.Forms.Label BorrowedBooks;
         private System.Windows.Forms.ComboBox cmbBorrowedBooks;
-        private System.Windows.Forms.Label UsersWithBorrows;
-        private System.Windows.Forms.ComboBox cmbUsersWithBorrows;
         private System.Windows.Forms.Button btnDeleteBorrow;
         private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbUsersWithBorrows;
     }
 }

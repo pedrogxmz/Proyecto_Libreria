@@ -12,7 +12,7 @@ namespace SQLiteDb
         public int Id { get; }
         public string FirstName { get; }
         public string LastName { get; }
-
+        public string Full_Name => $"{FirstName} {LastName}";
 
         public Users(int id, string firstname, string lastname)
         {
@@ -33,7 +33,6 @@ namespace SQLiteDb
             this.Title = title;
         }
     }
-
     public class UsuariosConPrestamo
     {
         public int User_Id { get; }
@@ -45,7 +44,6 @@ namespace SQLiteDb
             Full_Name = full_Name;
         }
     }
-
     public class Book
     {
         public int Id { get; }
@@ -83,6 +81,17 @@ namespace SQLiteDb
         public BorrowsCopies(int copies)
         {
             Copies = copies;
+        }
+    }
+    public class Books
+    {
+        public string Title { get; }
+        public int Book_Id { get; }
+
+        public Books(string title, int book_Id)
+        {
+            Title = title;
+            Book_Id = book_Id;
         }
     }
 
@@ -201,13 +210,12 @@ namespace SQLiteDb
                 while (rs.NextRecord())
                 {
                     users.Add(new UsuariosConPrestamo(rs.GetInt32("user_id"),
-                                         rs.GetString("full_name")));
+                                                      rs.GetString("full_name")));
                 }
             }
 
             return users;
         }
-
         public List<PrestamosPendientes> GetBorrowedBooks()
         {
             List<PrestamosPendientes> prestamos = new List<PrestamosPendientes>();
@@ -223,6 +231,49 @@ namespace SQLiteDb
                 }
             }
             return prestamos;
+        }
+        public List<UsuariosConPrestamo> GetBorrowsByBook(int id)
+        {
+            List<UsuariosConPrestamo> users = new List<UsuariosConPrestamo>();
+            string sql = "SELECT first_name || ' ' || users.last_name AS full_name, user_id"
+                            + " FROM borrows"
+                            + " INNER JOIN users ON users.id = borrows.user_id"
+                            + $" WHERE book_id = {id}"
+                            + " ORDER BY full_name;";
+
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
+            {
+                while (rs.NextRecord())
+                {
+                    users.Add(new UsuariosConPrestamo(rs.GetInt32("user_id"),
+                                                      rs.GetString("full_name")));
+                }
+            }
+
+            return users;
+        }
+        public List<Books> GetAllBooks()
+        {
+            List<Books> books = new List<Books>();
+            string sql = " SELECT title AS title, id AS id FROM books ORDER BY title;";
+
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
+            {
+                while (rs.NextRecord())
+                {
+                    books.Add(new Books(  rs.GetString("Title"),
+                                          rs.GetInt32("Book_Id")));
+                }
+            }
+
+
+            return books;
+        }
+
+        public void ReturnBook(int user_id, int book_id)
+        {
+            string sql = $"DELETE FROM borrows WHERE user_id= {user_id} AND book_id = {book_id}";
+            ExecuteNonQuery(sql);
         }
         public void AltaDeLibro(int id, int copies, string title, string author, int editorial_id, int edition, int year)
         {
@@ -317,6 +368,38 @@ namespace SQLiteDb
 
             string sql = $"UPDATE books SET copies = {NuevasCopias} WHERE id = {id}";
             ExecuteNonQuery(sql);
+        }
+
+        public bool ValidarDisponibilidad (int book_id)
+        {
+            var indicador = true;
+            var CopiasEnInventario = new List<BookCopies>();
+            var CopiasEnPrestamo = new List<BorrowsCopies>();
+
+            using (SQLiteRecordSet rs = ExecuteQuery($"SELECT copies FROM books WHERE id = {book_id}"))
+            {
+                while (rs.NextRecord())
+                {
+                    CopiasEnInventario.Add(new BookCopies(rs.GetInt32("copies")));
+                }
+            }
+            using (SQLiteRecordSet rs = ExecuteQuery($"SELECT user_id FROM borrows WHERE book_id = {book_id}"))
+            {
+                while (rs.NextRecord())
+                {
+                    CopiasEnPrestamo.Add(new BorrowsCopies(rs.GetInt32("copies")));
+                }
+            }
+
+            if (CopiasEnPrestamo.Count < CopiasEnInventario.Count)
+            {
+                indicador = true;
+            } else
+            {
+                indicador = false;
+            }
+
+            return indicador;
         }
     }
 }

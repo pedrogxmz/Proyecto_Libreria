@@ -97,5 +97,11 @@ namespace MyLibrary
             ArriboDeLibrosForm Form = new ArriboDeLibrosForm(library);
             Form.ShowDialog();
         }
+
+        private void solicitarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SolicitarPrestamoForm Form = new SolicitarPrestamoForm(library);
+            Form.ShowDialog();
+        }
     }
 }
