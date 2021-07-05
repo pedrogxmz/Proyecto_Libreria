@@ -90,7 +90,6 @@ namespace MyLibrary
             this.label1.Size = new System.Drawing.Size(79, 24);
             this.label1.TabIndex = 7;
             this.label1.Text = "Usuario:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cmbUser
             // 

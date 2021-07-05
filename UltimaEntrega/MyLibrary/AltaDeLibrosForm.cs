@@ -40,7 +40,7 @@ namespace MyLibrary
                 if (library.ValidarEditorialId(editorial_id))
                 {
                     library.AltaDeLibro(id, copies, title, author, editorial_id, edition, year);
-                    MessageBox.Show($"{id} {title} {author}  ha sido agregado",
+                    MessageBox.Show($"Se ha asigando el id: {id} al libro {title} del autor {author} con éxito",
                                   "Confirmación",
                                    MessageBoxButtons.OK,
                                    MessageBoxIcon.Information);

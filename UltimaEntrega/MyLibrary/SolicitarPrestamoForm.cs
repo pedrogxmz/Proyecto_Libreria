@@ -26,8 +26,8 @@ namespace MyLibrary
         private void SolicitarPrestamoForm_Load(object sender, EventArgs e)
         {
             cmbUser.ValueMember = "Id";
-            cmbUser.DisplayMember = "Full_Name";
-            cmbUser.DataSource = library.UsuariosPorId();
+            cmbUser.DisplayMember = $"Full_Name";
+            cmbUser.DataSource = library.UsersById();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -35,11 +35,6 @@ namespace MyLibrary
             Close();
         }
 
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void cmbBooks_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -54,7 +49,7 @@ namespace MyLibrary
 
             if (!library.ValidarPrestamo(user_id,book_id))
             {
-                switch (MessageBox.Show("Se asiginará a préstamo el libro seleccionado al usuario seleccionado , ¿desea continuar?",
+                switch (MessageBox.Show($"Se asiginará a préstamo el libro {cmbBooks.Text} usuario {cmbUser.Text}, ¿desea continuar?",
                     "Confirmación",
                     MessageBoxButtons.OKCancel,
                     MessageBoxIcon.Question))

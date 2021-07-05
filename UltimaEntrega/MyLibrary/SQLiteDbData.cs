@@ -12,7 +12,6 @@ namespace SQLiteDb
         public int Id { get; }
         public string FirstName { get; }
         public string LastName { get; }
-        public string Full_Name => $"{FirstName} {LastName}";
 
         public Users(int id, string firstname, string lastname)
         {
@@ -22,6 +21,18 @@ namespace SQLiteDb
 
         }
     }
+    public class Usuarios
+    {
+        public int Id { get; }
+        public string Full_Name { get; }
+
+        public Usuarios(int id, string full_Name)
+        {
+            Full_Name = full_Name;
+            Id = id;
+        }
+    }
+
     public class PrestamosPendientes
     {
         public int Book_Id { get; }
@@ -150,6 +161,25 @@ namespace SQLiteDb
                     usuarios.Add(new Users(rs.GetInt32("id"),
                                            rs.GetString("first_name"),
                                            rs.GetString("last_name")));
+                }
+            }
+            return usuarios;
+        }
+
+        public List<Usuarios> UsersById()
+        {
+            List<Usuarios> usuarios = new List<Usuarios>();
+
+            string sql = "SELECT id, first_name || ' ' || last_name AS full_name FROM users"
+                      + " ORDER BY id";
+
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
+            {
+                while (rs.NextRecord())
+                {
+                    usuarios.Add(new Usuarios(rs.GetInt32("id"),
+                                           rs.GetString("full_name")
+                                           ));
                 }
             }
             return usuarios;

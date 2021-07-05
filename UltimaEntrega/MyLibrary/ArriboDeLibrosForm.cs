@@ -49,6 +49,10 @@ namespace MyLibrary
 
         }
 
+        private void tbIdBook_TextChanged(object sender, EventArgs e)
+        {
+            btnAñadir.Enabled = true;
+        }
     }
 }
 

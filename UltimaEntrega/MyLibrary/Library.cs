@@ -28,6 +28,10 @@ namespace MyLibrary
         {
             return conn.UsuariosPorId();
         }
+        public List<Usuarios> UsersById()
+        {
+            return conn.UsersById();
+        }
         public void AgregarUsuario(int id, string firstname, string lastname) 
             => conn.AgregarUsuario(id, firstname , lastname);
 

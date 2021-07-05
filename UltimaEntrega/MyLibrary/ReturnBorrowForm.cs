@@ -41,7 +41,7 @@ namespace MyLibrary
             int user_id = (int)cmbUsersWithBorrows.SelectedValue;
             int book_id = (int)cmbBorrowedBooks.SelectedValue;
 
-            switch (MessageBox.Show("Se devolverá el libro seleccionado por el usuario seleccionado, ¿desea continuar?",
+            switch (MessageBox.Show($"Se devolverá el libro {cmbBorrowedBooks.Text} por el usuario {cmbUsersWithBorrows.Text}, ¿desea continuar?",
                 "Confirmación",
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Information))
