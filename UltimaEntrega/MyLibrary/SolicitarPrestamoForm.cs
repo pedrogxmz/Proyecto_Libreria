@@ -52,19 +52,25 @@ namespace MyLibrary
             int user_id = (int)cmbUser.SelectedValue;
             int book_id = (int)cmbBooks.SelectedValue;
 
-            MessageBox.Show("Se aaginará a préstamo el libro seleccionado al usuario seleccionado , ¿desea continuar?",
+            switch (MessageBox.Show("Se asiginará a préstamo el libro seleccionado al usuario seleccionado , ¿desea continuar?",
                 "Confirmación",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-
-            library.PrestarLibro(user_id, book_id);
-
-            MessageBox.Show("Préstamo realizado con éxito",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Question))
+            {
+                case DialogResult.OK:
+                    library.PrestarLibro(user_id, book_id);
+                    MessageBox.Show("Préstamo realizado con éxito",
                "Confirmación",
                MessageBoxButtons.OK,
                MessageBoxIcon.Information);
-            Close();
+                    Close();
+                    break;
+                default:
+                    MessageBox.Show("El préstamo no se ha realizado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
 
+
+            }
         }
     }
 }

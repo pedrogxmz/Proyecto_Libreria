@@ -52,6 +52,7 @@ namespace MyLibrary
                              "Error",
                               MessageBoxButtons.OK,
                               MessageBoxIcon.Information);
+                    Close();
                 }
             }
             else
@@ -60,6 +61,7 @@ namespace MyLibrary
                                "Error",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
+                    Close();
             }
         }
         private void tbAño_TextChanged(object sender, EventArgs e)

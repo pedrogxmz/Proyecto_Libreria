@@ -41,18 +41,26 @@ namespace MyLibrary
             int user_id = (int)cmbUsersWithBorrows.SelectedValue;
             int book_id = (int)cmbBorrowedBooks.SelectedValue;
 
-            MessageBox.Show("Se devolverá el libro seleccionado por el usuario seleccionado, ¿desea continuar?",
+            switch (MessageBox.Show("Se devolverá el libro seleccionado por el usuario seleccionado, ¿desea continuar?",
                 "Confirmación",
                 MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Information);
+                MessageBoxIcon.Information))
+            {
+                case DialogResult.OK:
+                    library.ReturnBook(user_id, book_id);
 
-            library.ReturnBook(user_id, book_id);
+                    MessageBox.Show("Devolución realizada con éxito",
+                       "Confirmación",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
+                    Close();
+                    break;
 
-            MessageBox.Show("Devolución realizada con éxito",
-               "Confirmación",
-               MessageBoxButtons.OK,
-               MessageBoxIcon.Information);
-            Close();
+                default:
+                    MessageBox.Show("La devolución no se ha realizado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    break;
+            }
+
 
         }
     }
