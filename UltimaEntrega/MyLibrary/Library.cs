@@ -94,6 +94,11 @@ namespace MyLibrary
         {
              conn.PrestarLibro(user_id, book_id);
         }
+
+        public bool ValidarPrestamo (int user_id, int book_id)
+        {
+            return conn.ValidarPrestamo(user_id, book_id);
+        }
         public void Close() 
         {
             conn.Close();

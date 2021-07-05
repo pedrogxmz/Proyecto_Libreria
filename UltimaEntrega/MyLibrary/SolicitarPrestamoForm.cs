@@ -52,25 +52,33 @@ namespace MyLibrary
             int user_id = (int)cmbUser.SelectedValue;
             int book_id = (int)cmbBooks.SelectedValue;
 
-            switch (MessageBox.Show("Se asiginará a préstamo el libro seleccionado al usuario seleccionado , ¿desea continuar?",
-                "Confirmación",
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Question))
+            if (!library.ValidarPrestamo(user_id,book_id))
             {
-                case DialogResult.OK:
-                    library.PrestarLibro(user_id, book_id);
-                    MessageBox.Show("Préstamo realizado con éxito",
-               "Confirmación",
-               MessageBoxButtons.OK,
-               MessageBoxIcon.Information);
-                    Close();
-                    break;
-                default:
-                    MessageBox.Show("El préstamo no se ha realizado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    break;
-
-
+                switch (MessageBox.Show("Se asiginará a préstamo el libro seleccionado al usuario seleccionado , ¿desea continuar?",
+                    "Confirmación",
+                    MessageBoxButtons.OKCancel,
+                    MessageBoxIcon.Question))
+                {
+                    case DialogResult.OK:
+                        library.PrestarLibro(user_id, book_id);
+                        MessageBox.Show("Préstamo realizado con éxito",
+                   "Confirmación",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+                        Close();
+                        break;
+                    default:
+                        MessageBox.Show("El préstamo no se ha realizado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        break;
+                }
+            } else
+            {
+                MessageBox.Show("El usuario seleccionado ya tiene el libro seleccionado en préstamo", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+
+            
         }
     }
 }

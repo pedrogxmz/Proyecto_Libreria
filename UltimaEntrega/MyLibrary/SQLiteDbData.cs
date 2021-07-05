@@ -406,5 +406,13 @@ namespace SQLiteDb
             string sql = $"INSERT INTO borrows  (user_id, book_id) VALUES ({user_id}, {book_id})";
             ExecuteNonQuery(sql);
         }
+        public bool ValidarPrestamo (int user_id, int book_id)
+        {
+            string sql = $"SELECT * FROM borrows WHERE user_id = {user_id} AND book_id = {book_id}";
+            using (SQLiteRecordSet rs = ExecuteQuery(sql))
+            {
+                return rs.NextRecord();
+            }
+        }
     }
 }
