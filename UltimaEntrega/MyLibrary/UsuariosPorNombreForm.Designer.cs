@@ -45,11 +45,10 @@ namespace MyLibrary
             this.Id,
             this.FirstName,
             this.LastName});
-            this.dgvUsuariosPorNombre.Location = new System.Drawing.Point(16, 15);
-            this.dgvUsuariosPorNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvUsuariosPorNombre.Location = new System.Drawing.Point(12, 12);
             this.dgvUsuariosPorNombre.Name = "dgvUsuariosPorNombre";
             this.dgvUsuariosPorNombre.RowHeadersWidth = 51;
-            this.dgvUsuariosPorNombre.Size = new System.Drawing.Size(427, 418);
+            this.dgvUsuariosPorNombre.Size = new System.Drawing.Size(320, 340);
             this.dgvUsuariosPorNombre.TabIndex = 0;
             // 
             // Id
@@ -81,10 +80,9 @@ namespace MyLibrary
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(343, 462);
-            this.btn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn1.Location = new System.Drawing.Point(257, 375);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(100, 28);
+            this.btn1.Size = new System.Drawing.Size(75, 23);
             this.btn1.TabIndex = 1;
             this.btn1.Text = "Cerrar";
             this.btn1.UseVisualStyleBackColor = true;
@@ -92,18 +90,17 @@ namespace MyLibrary
             // 
             // UsuariosPorNombreForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 505);
+            this.ClientSize = new System.Drawing.Size(344, 410);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.dgvUsuariosPorNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "UsuariosPorNombreForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "UsuariosPorNombre";
+            this.Text = "Usuarios Por Nombre";
             this.Load += new System.EventHandler(this.UsuariosPorNombreForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuariosPorNombre)).EndInit();
             this.ResumeLayout(false);
